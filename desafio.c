@@ -2,13 +2,16 @@
 
 int main(){
     double distancia;
+    double tempoHoras;
+    double tempoMinutos;
+    double tempoSegundos;
 
     printf("Digite a distancia entre dois planetas em quilômetros: ");
     scanf("%lf", &distancia);
     
-    double tempoHoras = distancia / (299792458 * 3.6);
-    double tempoMinutos = tempoHoras * 60;
-    double tempoSegundos = tempoHoras * 3600;
+    tempoHoras = distancia / (299792458 * 3.6);
+    tempoMinutos = tempoHoras * 60;
+    tempoSegundos = tempoHoras * 3600;
 
     printf("tempo para viajar na velocidade da luz: \n");
     printf("Segundos: %.11lf \n", tempoSegundos);
